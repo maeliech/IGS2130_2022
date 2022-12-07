@@ -1,0 +1,29 @@
+▀ Upgrade our bank application version 0.4 to 0.5
+
+▀ Create two classes to our bank application
+➢Class name: SavingAccount
+• Inherit from Account class
+• Contains interest rate member
+⁃ The interest rate(%) is determined by the argument of the class 
+constructor
+➢Class name: HighCreditAccount
+• Inherit from SavingAccount class
+• Has two interest rate: interest rate (defined in SavingAccount class) 
+and special interest rate
+⁃ special interest rate(%): depending on the given credit rating(A, B, and 
+C), additional interest will be set at 7%, 4% and 2%, respectively.
+• To make the program simple, the interest will be paid when you make a 
+deposit.
+• Make the deposit() member function virtual, so AccountHandler class can call 
+the most derived deposit() member function
+
+
+▀ Modify AccountHandler class
+➢Change the program menu to reflect the account type
+• Modify MakeAccount() function to select account type. According to 
+the selected account type, this function will call 
+MakeSavingAccount() or MakeHighCreditAccount().
+• Create a MakeSavingAccount() function that creates a saving 
+account
+• Create a MakeHighCreditAccount() function that creates a high 
+credit account
